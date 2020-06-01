@@ -2,5 +2,5 @@ from django.contrib import admin
 from .models import *
 
 admin.site.register({
-    Description, Skills, Services
+    Description, Skills, Services, Portfolio, PortCat
 })
