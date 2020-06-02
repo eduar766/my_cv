@@ -75,21 +75,20 @@
                         <!-- Section Title -->
                         <div class="section-title">
                             <h2 class="pull-left"><span>03</span>Portafolio</h2>
-                            <div class="portfolio-filter pull-right">
-                            <ul>
-                                <li class="btn btn-default filter active" data-filter="all">Todos</li>
-                                {% for cat in p_category %}
-                                <li class="btn btn-default filter" data-filter=".category-{{ cat.pk }}">{{ cat.cat }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+                            {% comment %} <div class="portfolio-filter pull-right">
+                                <ul>
+                                    <li class="btn btn-default filter active" data-filter="all">Todos</li>
+                                    {% for cat in p_category %}
+                                    <li class="btn btn-default filter" data-filter=".category-{{ cat.pk }}">{{ cat.cat }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div> {% endcomment %}
                         </div>
                         <div class="row">
-                            <div id="mix-container">
+                            
                             {% for p in portfolio %}
-                                {% for p in p.category.all %}
-                                <div class="col-xs-12 col-sm-4 mix  category-{{ p.pk }}">
-                                {% endfor %}
+                                <div class="col-xs-12 col-sm-4 category-{{ p.pk }} portafolio">
+                                
                                     <div class="imageWrapper">
                                         <a class="lightbox" href="#popup-{{ p.pk }}">
                                             <img class="img-portfolio-1" src="{{ p.image.url }}" alt=""><!-- Image 1 source -->
@@ -118,7 +117,6 @@
                                     </div>
                                 </div>
                             {% endfor %}
-                            </div>
                         </div><!-- end Inner row -->
                     </div>
                 </div><!-- end row -->
@@ -131,59 +129,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
-                        <!-- Section Title -->
                         <div class="section-title">
-                            <h2><span>04</span>Resume</h2>
-                        </div><!-- end Section Title -->
-                        <!-- Resume box 1 -->
+                            <h2><span>04</span>Resumen</h2>
+                        </div>
+                        {% for r in resume %}
                         <div class="resume-box">
                             <div>
-                                <i class="icon_pencil"></i>
+                                <i class="{{ r.icon }}"></i>
                             </div>
                             <div>
-                                <h3>Academy of Art University</h3>
-                                <span>2015 - Present</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3>{{ r.title }}</h3>
+                                <span>{{ r.fecha_inicio }} - {{ r.fecha_final }}</span>
+                                <span><b>Puesto: </b> {{ r.job }}</span>
+                                <span><b>Tecnologías: </b> {{ r.technologies }}</span>
+                                <p>{{ r.description }}</p>
                             </div>
                         </div>
-                        <!-- Resume box 2 -->
-                        <div class="resume-box">
-                            <div>
-                                <i class="icon_toolbox_alt"></i>
-                            </div>
-                            <div>
-                                <h3>IT Technical Institute</h3>
-                                <span>2014 - 2015</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <!-- Resume box 3 -->
-                        <div class="resume-box">
-                            <div>
-                                <i class="icon_genius"></i>
-                            </div>
-                            <div>
-                                <h3>Web Design School</h3>
-                                <span>2013 - 2014</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <!-- Resume box 4 -->
-                        <div class="resume-box">
-                            <div>
-                                <i class="icon_contacts_alt"></i>
-                            </div>
-                            <div>
-                                <h3>Bachelor Degree</h3>
-                                <span>2010 - 2013</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <!-- end Resume box 4 -->
+                        {% endfor %}
                     </div>
                 </div><!-- end row -->
             </div><!-- end container -->

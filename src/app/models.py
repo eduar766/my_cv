@@ -4,6 +4,7 @@ from django.db import models
 
 class Description(models.Model):
     text = models.TextField()
+    avatar = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.text
@@ -43,4 +44,17 @@ class Portfolio(models.Model):
 
     def __str__(self):
         return self.project
+    
+
+class Resume(models.Model):
+    title = models.CharField(max_length=50)
+    description = models.TextField()
+    fecha_inicio = models.CharField(max_length=20)
+    fecha_final = models.CharField(max_length=20)
+    icon = models.CharField(max_length=20)
+    job = models.CharField(max_length=50, blank=True, null=True)
+    technologies = models.CharField(max_length=200, blank=True, null=True)
+
+    def __str__(self):
+        return self.title
     
