@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Description, Skills, Services, Portfolio, PortCat, Resume
+from .models import *
 
 import requests
 
@@ -23,8 +23,6 @@ def medium_request():
         data.append(collect)
         p = p + 1 
 
-    print(data)
-
     return data
 
 def index(request):
@@ -34,6 +32,8 @@ def index(request):
     portfolio = Portfolio.objects.all()
     p_category = PortCat.objects.all()
     resume = Resume.objects.all().order_by('-pk')
+    testimonials = Testimonials.objects.all()
+    contact = Contact.objects.get(pk=1)
 
     medium = medium_request()
 
@@ -44,7 +44,9 @@ def index(request):
         'portfolio': portfolio,
         'p_category': p_category,
         'resume': resume,
-        'medium': medium
+        'medium': medium,
+        'testimonials': testimonials,
+        'contact': contact
     }
 
     return render(request, 'index.html', context)

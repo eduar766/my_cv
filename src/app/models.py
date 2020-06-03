@@ -58,3 +58,21 @@ class Resume(models.Model):
     def __str__(self):
         return self.title
     
+
+class Testimonials(models.Model):
+    name = models.CharField(max_length=80)
+    image = models.ImageField()
+    job = models.CharField(max_length=50)
+    testimonial = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
+class Contact(models.Model):
+    address = models.CharField(max_length=120)
+    cellphone = models.CharField(max_length=20)
+    email = models.EmailField(max_length=254)
+
+    def __str__(self):
+        return self.email
