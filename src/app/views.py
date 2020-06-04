@@ -1,7 +1,11 @@
 from django.shortcuts import render
 from .models import *
+from django.shortcuts import redirect
 
 import requests
+from django.core.mail import send_mail
+from django.conf import settings
+from .forms import EmailForm
 
 def medium_request():
     url_medium = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@eduar766'
@@ -25,6 +29,21 @@ def medium_request():
 
     return data
 
+global message
+global name
+global email
+
+def email_(name, email, message):
+    subject = '{name} Gracias por escribirme'.format(name=name)
+    message = 'Hola, es Eduardo Saavedra. Muchas gracias por escribirme, Significa mucho para mi. En cuanto tenga la posibilidad te devolvere el correo.'
+    email_from = settings.EMAIL_HOST_USER
+    recipient_list = ['eduar766@gmail.com', email]
+    send_mail( subject, message, email_from, recipient_list )
+
+    return redirect('index')
+
+
+
 def index(request):
     description = Description.objects.get(pk=1)
     skills = Skills.objects.all()
@@ -34,6 +53,19 @@ def index(request):
     resume = Resume.objects.all().order_by('-pk')
     testimonials = Testimonials.objects.all()
     contact = Contact.objects.get(pk=1)
+
+    
+    
+    if request.method == 'POST':
+        form = EmailForm(request.POST)
+        if form.is_valid():  
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+            qq = form.save() 
+    
+        send_e = email_(name, email, message)
+
 
     medium = medium_request()
 
@@ -50,3 +82,5 @@ def index(request):
     }
 
     return render(request, 'index.html', context)
+
+

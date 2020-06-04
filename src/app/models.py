@@ -76,3 +76,12 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.email
+
+
+class Email(models.Model):
+    name = models.CharField(max_length=120)
+    message = models.TextField()
+    email = models.EmailField(max_length=254)
+
+    def __str__(self):
+        return self.email
