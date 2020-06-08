@@ -7,6 +7,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from .forms import EmailForm
 
+
 def medium_request():
     url_medium = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@eduar766'
     response = requests.get(url_medium).json()
@@ -36,7 +37,7 @@ global email
 def email_(name, email, message):
     subject = '{name} Gracias por escribirme'.format(name=name)
     message = 'Hola, es Eduardo Saavedra. Muchas gracias por escribirme, Significa mucho para mi. En cuanto tenga la posibilidad te devolvere el correo.'
-    email_from = settings.EMAIL_HOST_USER
+    email_from = 'eduar766@gmail.com'
     recipient_list = ['eduar766@gmail.com', email]
     send_mail( subject, message, email_from, recipient_list )
 

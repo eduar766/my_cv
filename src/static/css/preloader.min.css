@@ -1,6 +1,6 @@
 
 .preloader {
-    background: #e76712 none repeat scroll 0 0;
+    background: var(--color-principal) none repeat scroll 0 0;
     height: 100%;
     left: 0;
     position: fixed;
