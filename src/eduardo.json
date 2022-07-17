@@ -49,16 +49,16 @@
             "startDate": "March - 2022",
             "endDate": "present",
             "technologies": [
-                "AWS",
-                "Kubernetes",
-                "Terraform",
-                "Docker",
-                "Nest.js",
-                "ReactJs",
-                "Postgresql",
-                "Jira",
-                "Gitlab",
-                "Python"
+                "aws",
+                "kubernetes",
+                "terraform",
+                "docker",
+                "nest.js",
+                "reactJs",
+                "postgresql",
+                "jira",
+                "gitlab",
+                "python"
             ]
         },
         {
@@ -70,15 +70,15 @@
             "startDate": "Sep - 2021",
             "endDate": "March - 2022",
             "technologies": [
-                "AWS",
-                "Kubernetes",
-                "Docker",
-                "Nest.js",
-                "ReactJs",
-                "Postgresql",
-                "Jira",
-                "Gitlab",
-                "Python"
+                "aWS",
+                "kubernetes",
+                "docker",
+                "nest.js",
+                "reactJs",
+                "postgresql",
+                "jira",
+                "gitlab",
+                "python"
             ]
         },
         {
@@ -90,15 +90,15 @@
             "startDate": "Jul - 2020",
             "endDate": "Sep - 2021",
             "technologies": [
-                "AWS",
-                "Kubernetes",
-                "Docker",
-                "Nest.js",
-                "ReactJs",
-                "Postgresql",
-                "Jira",
-                "Gitlab",
-                "Python"
+                "aWS",
+                "kubernetes",
+                "docker",
+                "nest.js",
+                "reactJs",
+                "postgresql",
+                "jira",
+                "gitlab",
+                "python"
             ]
         },
         {
@@ -110,11 +110,11 @@
             "startDate": "Aug - 2019",
             "endDate": "May - 2020",
             "technologies": [
-                "Python",
-                "Django",
-                "Wordpress",
-                "MySQL",
-                "Linux Servers"
+                "python",
+                "django",
+                "wordpress",
+                "mySQL",
+                "linux"
             ]
         },
         {
@@ -126,12 +126,12 @@
             "startDate": "Feb - 2018",
             "endDate": "Apr - 2020",
             "technologies": [
-                "Wordpress",
-                "Shopify",
-                "HTML",
-                "CSS",
-                "Javascript",
-                "PHP"
+                "wordpress",
+                "shopify",
+                "html",
+                "css",
+                "javascript",
+                "php"
             ]
         },
         {
@@ -143,15 +143,15 @@
             "startDate": "Mar - 2015",
             "endDate": "Oct - 2019",
             "technologies": [
-                "Wordpress",
-                "Shopify",
-                "HTML",
-                "CSS",
-                "Javascript",
-                "PHP",
-                "Python",
-                "Django",
-                "Laravel"
+                "wordpress",
+                "shopify",
+                "html",
+                "css",
+                "javascript",
+                "php",
+                "python",
+                "django",
+                "laravel"
             ]
         }
     ],
@@ -199,6 +199,134 @@
                     "url": "https://anchor.fm/s/3014f110/podcast/rss"
                 }
             ]
+        }
+    ],
+    "techs": [
+        {
+            "name": "aws",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:aws"
+        },
+        {
+            "name": "typescript",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:language-typescript"
+        },
+        {
+            "name": "kubernetes",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:kubernetes"
+        },
+        {
+            "name": "terraform",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:terraform"
+        },
+        {
+            "name": "docker",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:docker"
+        },
+        {
+            "name": "nest.js",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "logos:nestjs"
+        },
+        {
+            "name": "reactJs",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:react"
+        },
+        {
+            "name": "postgresql",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "akar-icons:postgresql-fill"
+        },
+        {
+            "name": "jira",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:jira"
+        },
+        {
+            "name": "gitlab",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:gitlab"
+        },
+        {
+            "name": "python",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:language-python"
+        },
+        {
+            "name": "django",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "akar-icons:django-fill"
+        },
+        {
+            "name": "wordpress",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:wordpress"
+        },
+        {
+            "name": "mySQL",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:mysql"
+        },
+        {
+            "name": "linux",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:linux"
+        },
+        {
+            "name": "linux",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "bxl:shopify"
+        },
+        {
+            "name": "html",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:language-html5"
+        },
+        {
+            "name": "css",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:language-css3"
+        },
+        {
+            "name": "javascript",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:language-javascript"
+        },
+        {
+            "name": "php",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:language-php"
+        },
+        {
+            "name": "laravel",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:laravel"
         }
     ]
 }

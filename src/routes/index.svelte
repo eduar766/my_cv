@@ -13,5 +13,5 @@
 <div>
     <Navbar socials={data.socials}/>
     <Presentation about={data.about} socials={data.socials}/>
-    <Jobs jobs={data.jobs}/>
+    <Jobs jobs={data.jobs} techs={data.techs}/>
 </div>
