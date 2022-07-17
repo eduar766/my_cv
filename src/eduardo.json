@@ -1,0 +1,204 @@
+{
+    "id": 1,
+    "name": "Eduardo",
+    "lastname": "Saavedra",
+    "profession": "Tech Leader | Softaware Engieer Sr",
+    "phone": "+56979501697",
+    "country": "Chile",
+    "city": "Santiago de Chile",
+    "about": "Geek passionate about technology, but not more than by writing, with big dreams of being author and not only of my books if not of my own life. Eager to learn and work in any project that allows me to increase my knowledge, and if it serves to help others do count on me!",
+    "socials": [
+        {
+            "id": 1,
+            "title": "linkedIn",
+            "url": "https://www.linkedin.com/in/eduardo-saavedra/",
+            "icon": "ant-design:linkedin-filled"
+        },
+        {
+            "id": 2,
+            "title": "gitHub",
+            "url": "https://github.com/eduar766",
+            "icon": "ant-design:github-filled"
+        },
+        {
+            "id": 3,
+            "title": "medium",
+            "url": "https://medium.com/@eduar766",
+            "icon": "ant-design:medium-circle-filled"
+        },
+        {
+            "id": 4,
+            "title": "twitter",
+            "url": "https://twitter.com/eduar766",
+            "icon": "ant-design:twitter-circle-filled"
+        },
+        {
+            "id": 5,
+            "title": "instagram",
+            "url": "https://www.instagram.com/eduar766/",
+            "icon": "ant-design:instagram-filled"
+        }
+    ],
+    "jobs": [
+        {
+            "id": 1,
+            "company": "Cencosud",
+            "jobTitle": "Tech Leader",
+            "place": "Santiago de Chile",
+            "description": "Management of a large team of developers, Design of Software architecture and Technological Solutions for the largest Retail company in South America.",
+            "startDate": "March - 2022",
+            "endDate": "present",
+            "technologies": [
+                "AWS",
+                "Kubernetes",
+                "Terraform",
+                "Docker",
+                "Nest.js",
+                "ReactJs",
+                "Postgresql",
+                "Jira",
+                "Gitlab",
+                "Python"
+            ]
+        },
+        {
+            "id": 2,
+            "company": "Cencosud",
+            "jobTitle": "Senior Software Engineer",
+            "place": "Santiago de Chile",
+            "description": "Development of Applications and Software Architecture for the largest retail in Latin America.",
+            "startDate": "Sep - 2021",
+            "endDate": "March - 2022",
+            "technologies": [
+                "AWS",
+                "Kubernetes",
+                "Docker",
+                "Nest.js",
+                "ReactJs",
+                "Postgresql",
+                "Jira",
+                "Gitlab",
+                "Python"
+            ]
+        },
+        {
+            "id": 3,
+            "company": "ACL Tecnologia",
+            "jobTitle": "Senior Software Engineer",
+            "place": "Santiago de Chile",
+            "description": "Development of applications and web solutions Cencosud client. Node, React, PostgreSQL, RestApis, AWS, and Docker are some of the everyday tools at work, also we use scrum methodology and Jira.",
+            "startDate": "Jul - 2020",
+            "endDate": "Sep - 2021",
+            "technologies": [
+                "AWS",
+                "Kubernetes",
+                "Docker",
+                "Nest.js",
+                "ReactJs",
+                "Postgresql",
+                "Jira",
+                "Gitlab",
+                "Python"
+            ]
+        },
+        {
+            "id": 4,
+            "company": "Avant Technologies",
+            "jobTitle": "Software Engineer | Web Developer",
+            "place": "Santiago de Chile",
+            "description": "Development of the corporate website. Development of an internal ticket system and also a training platform for technicians. Also participate in the creation of a DMS (Document Magnament System)",
+            "startDate": "Aug - 2019",
+            "endDate": "May - 2020",
+            "technologies": [
+                "Python",
+                "Django",
+                "Wordpress",
+                "MySQL",
+                "Linux Servers"
+            ]
+        },
+        {
+            "id": 5,
+            "company": "QUATTRO",
+            "jobTitle": "Web Developer",
+            "place": "",
+            "description": "Creation of Websites and ecommerce with Woocommerce and Shopify. Development of Technological solutions for customers.",
+            "startDate": "Feb - 2018",
+            "endDate": "Apr - 2020",
+            "technologies": [
+                "Wordpress",
+                "Shopify",
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP"
+            ]
+        },
+        {
+            "id": 6,
+            "company": "Uakami Studio",
+            "jobTitle": "Full Stack Developer",
+            "place": "",
+            "description": "Development of solutions to our customers in Uakami. What has prompted me to handle multiple languages of programming such as javascript, PHP and Python. As well as frameworks like Django, Flesk and Laravel. Also extensive experience in Wordpress and the use of CRM and ERP as Odoo, Zoho CRM and Agile CRM. Also maintenance and design of online advertising campaigns with Google Adwords, Analytics and Facebook Leads Ads.",
+            "startDate": "Mar - 2015",
+            "endDate": "Oct - 2019",
+            "technologies": [
+                "Wordpress",
+                "Shopify",
+                "HTML",
+                "CSS",
+                "Javascript",
+                "PHP",
+                "Python",
+                "Django",
+                "Laravel"
+            ]
+        }
+    ],
+    "podcast": [
+        {
+            "id": 1,
+            "title": "The Bad Request Show",
+            "description": "",
+            "platform": [
+                {
+                    "id": 1,
+                    "title": "Anchor",
+                    "url": "https://anchor.fm/badrequestshow"
+                },
+                {
+                    "id": 2,
+                    "title": "Spotify",
+                    "url": "https://open.spotify.com/show/3CBi0J0pcdMFcarhBIeWZh"
+                },
+                {
+                    "id": 3,
+                    "title": "RSS",
+                    "url": "https://anchor.fm/s/64fe88f0/podcast/rss"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Visita Robótica",
+            "description": "",
+            "platform": [
+                {
+                    "id": 1,
+                    "title": "Anchor",
+                    "url": "https://anchor.fm/visita-robotica"
+                },
+                {
+                    "id": 2,
+                    "title": "Spotify",
+                    "url": "https://open.spotify.com/show/4KFbcLf72adMQMEF8ttEjp"
+                },
+                {
+                    "id": 3,
+                    "title": "RSS",
+                    "url": "https://anchor.fm/s/3014f110/podcast/rss"
+                }
+            ]
+        }
+    ]
+}
