@@ -19,15 +19,17 @@
                         <a class="hover:text-cyan-400" href="">
                             <div class="text-xl font-semibold">{job.company}</div>
                         </a>
-                        <p class="">
+                        <p class="mt-1 text-xs">
                             <span class="font-bold text-sky-500">Start:</span> {job.startDate}
                             <span class="font-bold text-sky-500">End:</span> {job.endDate}
                         </p>
-                        <p class="">
+                        <p class="mt-1 text-xs">
                             <span class="font-bold text-sky-500">Job:</span> {job.jobTitle}
                         </p>
-                        <p class="">
-                            <span class="font-bold text-sky-500">Place:</span> {job.place}
+                        <p class="mt-1 text-xs">
+                            {#if job.place}
+                                <span class="font-bold text-sky-500">Place:</span> {job.place}
+                            {/if} 
                         </p>
                     </div>
                     <p class="mt-3 text-gray-400">
@@ -38,11 +40,11 @@
                     </div>
 
                     <div class="flex flex-col items-center gap-y-2 md:flex-row my-5">
-                        <div class="grid grid-cols-5 md:grid-cols-6">
+                        <div class="grid grid-cols-5 md:grid-cols-6 ">
                             {#each job.technologies as jb }
                                 {#each techs as t}
                                     {#if t.name === jb}
-                                        <Icon icon={t.icon} class="h-12 w-12 hover:translate-y-1" loading="lazy"/>
+                                        <Icon icon={t.icon} class="h-10 w-10 hover:translate-y-1" loading="lazy"/>
                                     {/if}        
                                 {/each}
                             {/each}

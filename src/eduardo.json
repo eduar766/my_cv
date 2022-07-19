@@ -3,6 +3,7 @@
     "name": "Eduardo",
     "lastname": "Saavedra",
     "profession": "Tech Leader | Softaware Engieer Sr",
+    "photo": "assets/images/avatar.svg",
     "phone": "+56979501697",
     "country": "Chile",
     "city": "Santiago de Chile",
@@ -155,25 +156,26 @@
             ]
         }
     ],
-    "podcast": [
+    "podcasts": [
         {
             "id": 1,
             "title": "The Bad Request Show",
-            "description": "",
+            "logo": "assets/images/badrequest2.png",
+            "description": "Podcast de Programación",
             "platform": [
                 {
                     "id": 1,
-                    "title": "Anchor",
+                    "title": "anchor",
                     "url": "https://anchor.fm/badrequestshow"
                 },
                 {
                     "id": 2,
-                    "title": "Spotify",
+                    "title": "spotify",
                     "url": "https://open.spotify.com/show/3CBi0J0pcdMFcarhBIeWZh"
                 },
                 {
                     "id": 3,
-                    "title": "RSS",
+                    "title": "rss",
                     "url": "https://anchor.fm/s/64fe88f0/podcast/rss"
                 }
             ]
@@ -181,27 +183,40 @@
         {
             "id": 2,
             "title": "Visita Robótica",
-            "description": "",
+            "logo": "assets/images/visita.png",
+            "description": "Podcast de Variedad",
             "platform": [
                 {
                     "id": 1,
-                    "title": "Anchor",
+                    "title": "anchor",
                     "url": "https://anchor.fm/visita-robotica"
                 },
                 {
                     "id": 2,
-                    "title": "Spotify",
+                    "title": "spotify",
                     "url": "https://open.spotify.com/show/4KFbcLf72adMQMEF8ttEjp"
                 },
                 {
                     "id": 3,
-                    "title": "RSS",
+                    "title": "rss",
                     "url": "https://anchor.fm/s/3014f110/podcast/rss"
                 }
             ]
         }
     ],
     "techs": [
+        {
+            "name": "anchor",
+            "icon": "simple-icons:anchor"
+        },
+        {
+            "name": "spotify",
+            "icon": "simple-icons:spotify"
+        },
+        {
+            "name": "rss",
+            "icon": "simple-icons:rss"
+        },
         {
             "name": "aws",
             "bgcolor": "",
