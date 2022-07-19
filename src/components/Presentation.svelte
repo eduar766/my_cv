@@ -3,6 +3,8 @@
 
     export let about;
     export let socials;
+	import photoPerri from '$lib/assets/avatar.svg';
+	export let photo;
 </script>
 
 <div class="mx-auto max-w-screen-lg px-3 py-6">
@@ -27,7 +29,7 @@
 			</div>
 		</div>
 		<div class="shrink-0">
-			<img class="h-80 w-64" src="../src/assets/images/avatar.svg" alt="Edu" loading="lazy" />
+			<img class="h-80 w-64" src={photoPerri} alt="Edu" loading="lazy" />
 		</div>
 	</div>
 </div>

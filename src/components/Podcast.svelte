@@ -19,7 +19,7 @@
                     <div class="aspect-w-3 aspect-h-2">
                         <img
                             class="object-cover object-center h-15 w-15"
-                            src={`../src/${pod.logo}`}
+                            src={`${pod.logo}`}
                             loading="lazy"
                             alt=""
                         />

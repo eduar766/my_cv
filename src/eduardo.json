@@ -3,7 +3,7 @@
     "name": "Eduardo",
     "lastname": "Saavedra",
     "profession": "Tech Leader | Softaware Engieer Sr",
-    "photo": "$assets/images/avatar.svg",
+    "photo": "$lib/assets/avatar.svg",
     "phone": "+56979501697",
     "country": "Chile",
     "city": "Santiago de Chile",
