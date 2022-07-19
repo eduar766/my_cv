@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="flex flex-col items-center gap-y-2 my-5">
-                        <div class="grid grid-cols-1 items-center md:grid-cols-3 ">
+                        <div class="grid grid-cols-3 items-center md:grid-cols-3 ">
                             {#each pod.platform as podi }
                                 {#each techs as t}
                                     {#if t.name === podi.title}
