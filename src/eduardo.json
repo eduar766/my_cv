@@ -160,7 +160,7 @@
         {
             "id": 1,
             "title": "The Bad Request Show",
-            "logo": "$assets/images/badrequest2.png",
+            "logo": "$lib/assets/badrequest2.png",
             "description": "Podcast de Programación",
             "platform": [
                 {
@@ -183,7 +183,7 @@
         {
             "id": 2,
             "title": "Visita Robótica",
-            "logo": "$assets/images/visita.png",
+            "logo": "$lib/assets/visita.png",
             "description": "Podcast de Variedad",
             "platform": [
                 {

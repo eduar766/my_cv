@@ -2,6 +2,11 @@
     export let podcasts;
     export let techs;
     import Icon from '@iconify/svelte';
+
+    import badrequestphoto from '$lib/assets/badrequest2.png';
+    import visitarobotica from '$lib/assets/visita.png';
+
+
 </script>
 
 <div class="mx-auto max-w-screen-lg px-3 py-6">
@@ -17,12 +22,21 @@
             <a class="hover:translate-y-1" href="">
                 <div class="overflow-hidden rounded-md bg-slate-800">
                     <div class="aspect-w-3 aspect-h-2">
+                        {#if pod.id === 1}
                         <img
                             class="object-cover object-center h-15 w-15"
-                            src={`${pod.logo}`}
+                            src={badrequestphoto}
                             loading="lazy"
                             alt=""
                         />
+                        {:else if pod.id === 2}
+                            <img
+                                class="object-cover object-center h-15 w-15"
+                                src={visitarobotica}
+                                loading="lazy"
+                                alt=""
+                            />
+                        {/if}
                     </div>
                     <div class="px-3 pt-4 pb-6 text-center">
                         <h2 class="text-xl font-semibold">{pod.title}</h2>
