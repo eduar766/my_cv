@@ -16,7 +16,7 @@
             <div class="items-center gap-x-8 rounded-md bg-slate-800 p-3 w">
                 <div>
                     <div class="flex flex-col gap-y-2 ">
-                        <a class="hover:text-cyan-400" href="">
+                        <a class="hover:text-cyan-400" href="/">
                             <div class="text-xl font-semibold">{job.company}</div>
                         </a>
                         <p class="mt-1 text-xs">

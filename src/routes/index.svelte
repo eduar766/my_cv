@@ -17,5 +17,5 @@
     <Presentation about={data.about} socials={data.socials}/>
     <Jobs jobs={data.jobs} techs={data.techs} />
     <Podcast podcasts={data.podcasts} techs={data.techs}/>
-    <Footer />
+    <Footer socials={data.socials}/>
 </div>
