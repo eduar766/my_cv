@@ -4,7 +4,7 @@
 
 <div class="mx-auto max-w-screen-lg px-3 py-6">
 	<div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between">
-		<a href="/demo/astro-boilerplate">
+		<a href="/">
             <div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
 				Eduardo Saavedra
 			</div>
