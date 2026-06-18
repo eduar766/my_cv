@@ -144,11 +144,33 @@
             ]
         }
     ],
+    "skills": [
+        {
+            "category": "Cloud & Infrastructure",
+            "items": ["aws", "kubernetes", "docker", "terraform"]
+        },
+        {
+            "category": "DevOps & Tools",
+            "items": ["aws", "docker", "datadog", "cloudformation"]
+        },
+        {
+            "category": "Artificial Intelligence",
+            "items": ["ai"]
+        },
+        {
+            "category": "Backend & Languages",
+            "items": ["nest.js", "django", "python", "javascript", "typescript", "php", "postgresql", "node.js"]
+        },
+        {
+            "category": "CRM & Platforms",
+            "items": ["salesforce", "hubspot", "zoho", "wordpress", "woocommerce", "shopify"]
+        }
+    ],
     "podcasts": [
         {
             "id": 1,
             "title": "The Bad Request Show",
-            "logo": "$lib/assets/badrequest2.png",
+            "logo": "badrequest2.png",
             "description": "Podcast de Programación",
             "platform": [
                 {
@@ -171,7 +193,7 @@
         {
             "id": 2,
             "title": "Visita Robótica",
-            "logo": "$lib/assets/visita.png",
+            "logo": "visita.png",
             "description": "Podcast de Variedad",
             "platform": [
                 {
