@@ -2,12 +2,12 @@
     "id": 1,
     "name": "Eduardo",
     "lastname": "Saavedra",
-    "profession": "Tech Leader | Softaware Engieer Sr",
+    "profession": "Technical Lead Senior | Software Engineer Sr",
     "photo": "$lib/assets/avatar.svg",
     "phone": "+56979501697",
     "country": "Chile",
     "city": "Santiago de Chile",
-    "about": "Geek passionate about technology, but not more than by writing, with big dreams of being author and not only of my books if not of my own life. Eager to learn and work in any project that allows me to increase my knowledge, and if it serves to help others do count on me!",
+    "about": "Ingeniero de Telecomunicaciones y Software con más de 10 años de experiencia. Actualmente me desempeño como Technical Lead Senior, especializado en la creación de sistemas escalables (Microservices) y de alto rendimiento en el sector financiero y retail. Experto en liderar la transformación digital, arquitectura en la nube (AWS) e integraciones estratégicas. Enfocado en la excelencia técnica y en la gestión de equipos hacia la innovación continua.",
     "socials": [
         {
             "id": 1,
@@ -42,13 +42,35 @@
     ],
     "jobs": [
         {
+            "id": 7,
+            "company": "BK Servicios Financieros",
+            "jobTitle": "Technical Lead Senior",
+            "place": "Santiago de Chile",
+            "description": "Coordino y superviso el ciclo de vida de desarrollo de productos, actuando como puente técnico entre el equipo interno de ingeniería y proveedores externos para garantizar entregas con buenas prácticas. Diseño e implemento infraestructuras en AWS tomando en cuenta los pilares del Well-Architected Framework, asegurando que las plataformas financieras soporten el crecimiento de la demanda. Lidero el uso de Inteligencia Artificial (Agentes) para el prototipado rápido de herramientas core, como simuladores financieros y oficinas virtuales, logrando reducir el Time to Market al menos en un 40%. Dirigí las integraciones complejas de sistemas legado e internos con el CRM Salesforce para Crediautos, unificando la experiencia de los ejecutivos.",
+            "startDate": "05/2025",
+            "endDate": "Presente",
+            "technologies": [
+                "aws",
+                "kubernetes",
+                "docker",
+                "terraform",
+                "nest.js",
+                "typescript",
+                "postgresql",
+                "ai",
+                "salesforce",
+                "datadog",
+                "cloudformation"
+            ]
+        },
+        {
             "id": 1,
             "company": "Cencosud",
-            "jobTitle": "Tech Leader",
+            "jobTitle": "Senior Software Engineer - Technical Lead",
             "place": "Santiago de Chile",
-            "description": "Management of a large team of developers, Design of Software architecture and Technological Solutions for the largest Retail company in South America.",
-            "startDate": "March - 2022",
-            "endDate": "present",
+            "description": "Diseñé y lideré el desarrollo de un sistema de gestión de capacidades para supermercados a nivel nacional (Moncap), utilizando NestJS, AWS RDS y una arquitectura serverless con AWS Lambda, SQS y SNS. Implementé infraestructuras robustas sobre Kubernetes (EKS) y PostgreSQL, garantizando la estabilidad durante eventos de alta demanda. Dirigí el equipo técnico para el lanzamiento de 'Balancer', una solución de optimización de ventanas horarias que se escaló con éxito a 5 países. Inicié como consultor externo (ACL) y fui internalizado en septiembre de 2021 debido al liderazgo demostrado en proyectos core de la compañía.",
+            "startDate": "07/2020",
+            "endDate": "10/2024",
             "technologies": [
                 "aws",
                 "kubernetes",
@@ -59,60 +81,22 @@
                 "postgresql",
                 "jira",
                 "gitlab",
-                "python"
-            ]
-        },
-        {
-            "id": 2,
-            "company": "Cencosud",
-            "jobTitle": "Senior Software Engineer",
-            "place": "Santiago de Chile",
-            "description": "Development of Applications and Software Architecture for the largest retail in Latin America.",
-            "startDate": "Sep - 2021",
-            "endDate": "March - 2022",
-            "technologies": [
-                "aWS",
-                "kubernetes",
-                "docker",
-                "nest.js",
-                "reactJs",
-                "postgresql",
-                "jira",
-                "gitlab",
-                "python"
-            ]
-        },
-        {
-            "id": 3,
-            "company": "ACL Tecnologia",
-            "jobTitle": "Senior Software Engineer",
-            "place": "Santiago de Chile",
-            "description": "Development of applications and web solutions Cencosud client. Node, React, PostgreSQL, RestApis, AWS, and Docker are some of the everyday tools at work, also we use scrum methodology and Jira.",
-            "startDate": "Jul - 2020",
-            "endDate": "Sep - 2021",
-            "technologies": [
-                "aWS",
-                "kubernetes",
-                "docker",
-                "nest.js",
-                "reactJs",
-                "postgresql",
-                "jira",
-                "gitlab",
-                "python"
+                "python",
+                "typescript"
             ]
         },
         {
             "id": 4,
             "company": "Avant Technologies",
-            "jobTitle": "Software Engineer | Web Developer",
+            "jobTitle": "Full Stack Developer",
             "place": "Santiago de Chile",
-            "description": "Development of the corporate website. Development of an internal ticket system and also a training platform for technicians. Also participate in the creation of a DMS (Document Magnament System)",
-            "startDate": "Aug - 2019",
-            "endDate": "May - 2020",
+            "description": "Lideré el desarrollo del sitio web institucional y sistemas internos utilizando ReactJS para el frontend y Django para el backend, asegurando una arquitectura robusta y escalable. Diseñé e implementé un sistema automatizado de administración de archivos basado en Django, optimizando los tiempos de acceso y la organización de la documentación crítica empresarial. Desarrollé landing pages de productos y una plataforma de capacitación técnica mediante WordPress LMS, facilitando el onboarding y la formación continua del equipo técnico.",
+            "startDate": "08/2019",
+            "endDate": "04/2020",
             "technologies": [
                 "python",
                 "django",
+                "reactJs",
                 "wordpress",
                 "mySQL",
                 "linux"
@@ -122,12 +106,13 @@
             "id": 5,
             "company": "QUATTRO",
             "jobTitle": "Web Developer",
-            "place": "",
-            "description": "Creation of Websites and ecommerce with Woocommerce and Shopify. Development of Technological solutions for customers.",
-            "startDate": "Feb - 2018",
-            "endDate": "Apr - 2020",
+            "place": "USA (Remote)",
+            "description": "Responsable del diseño, creación y mantenimiento de múltiples sitios de comercio electrónico utilizando WooCommerce y Shopify para clientes en Estados Unidos. Implementé mejoras en la interfaz y flujo de pago (checkout) para aumentar las tasas de conversión y la retención de usuarios en diversas plataformas digitales.",
+            "startDate": "02/2018",
+            "endDate": "04/2020",
             "technologies": [
                 "wordpress",
+                "woocommerce",
                 "shopify",
                 "html",
                 "css",
@@ -139,10 +124,10 @@
             "id": 6,
             "company": "Uakami Studio",
             "jobTitle": "Full Stack Developer",
-            "place": "",
-            "description": "Development of solutions to our customers in Uakami. What has prompted me to handle multiple languages of programming such as javascript, PHP and Python. As well as frameworks like Django, Flesk and Laravel. Also extensive experience in Wordpress and the use of CRM and ERP as Odoo, Zoho CRM and Agile CRM. Also maintenance and design of online advertising campaigns with Google Adwords, Analytics and Facebook Leads Ads.",
-            "startDate": "Mar - 2015",
-            "endDate": "Oct - 2019",
+            "place": "Mexico (Remote)",
+            "description": "Construcción de servicios y APIs REST utilizando Django Rest Framework, facilitando la comunicación entre plataformas web y aplicaciones móviles. Desarrollé scripts en Python, JavaScript y PHP para la automatización de procesos internos, reduciendo tareas manuales repetitivas. Creé integraciones y manejo de diversos ecosistemas de clientes, incluyendo Salesforce, Zoho, Odoo y HubSpot, para centralizar la información de ventas y marketing.",
+            "startDate": "03/2015",
+            "endDate": "10/2019",
             "technologies": [
                 "wordpress",
                 "shopify",
@@ -152,7 +137,10 @@
                 "php",
                 "python",
                 "django",
-                "laravel"
+                "laravel",
+                "salesforce",
+                "zoho",
+                "hubspot"
             ]
         }
     ],
@@ -308,7 +296,7 @@
             "icon": "mdi:linux"
         },
         {
-            "name": "linux",
+            "name": "shopify",
             "bgcolor": "",
             "textcolor": "",
             "icon": "bxl:shopify"
@@ -342,6 +330,54 @@
             "bgcolor": "",
             "textcolor": "",
             "icon": "mdi:laravel"
+        },
+        {
+            "name": "node.js",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "logos:nodejs"
+        },
+        {
+            "name": "salesforce",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:salesforce"
+        },
+        {
+            "name": "hubspot",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:hubspot"
+        },
+        {
+            "name": "zoho",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:zoho"
+        },
+        {
+            "name": "datadog",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:datadog"
+        },
+        {
+            "name": "cloudformation",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:amazonaws"
+        },
+        {
+            "name": "ai",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "mdi:robot"
+        },
+        {
+            "name": "woocommerce",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:woocommerce"
         }
     ]
 }
