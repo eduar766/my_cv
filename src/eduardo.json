@@ -155,7 +155,7 @@
         },
         {
             "category": "Artificial Intelligence",
-            "items": ["ai"]
+            "items": ["ai", "opencode", "claude", "gemini", "openai"]
         },
         {
             "category": "Backend & Languages",
@@ -394,6 +394,30 @@
             "bgcolor": "",
             "textcolor": "",
             "icon": "mdi:robot"
+        },
+        {
+            "name": "opencode",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:opencode"
+        },
+        {
+            "name": "claude",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:claude"
+        },
+        {
+            "name": "gemini",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:googlegemini"
+        },
+        {
+            "name": "openai",
+            "bgcolor": "",
+            "textcolor": "",
+            "icon": "simple-icons:openai"
         },
         {
             "name": "woocommerce",
