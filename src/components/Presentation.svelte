@@ -7,7 +7,7 @@
 	import photo from '$lib/assets/avatar.svg';
 </script>
 
-<div class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+<section id="about" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
 	<div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
 		<div>
 			<h1 class="text-3xl font-bold">
@@ -35,7 +35,7 @@
             </div>
 		</div>
 		<div class="shrink-0">
-			<img class="h-80 w-64" src={photo} alt="Edu" loading="lazy" />
+			<img class="h-80 w-64" src={photo} alt="Eduardo Saavedra avatar" loading="lazy" />
 		</div>
 	</div>
-</div>
+</section>

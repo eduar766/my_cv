@@ -3,7 +3,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<div class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+<footer class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
 	<div class="border-t border-gray-600 pt-5 md:flex md:items-center md:justify-between md:p-6">
 		<div class="text-sm text-gray-200">© Copyright 2026. Built with  <sapan class="font-bold"><a href="https://kit.svelte.dev/">SvelteKit</a> + <a href="https://tailwindcss.com/">TailwindCSS</a></sapan></div>
 
@@ -19,5 +19,4 @@
 			</a>
 		</div>
 	</div>
-	
-</div>
+</footer>

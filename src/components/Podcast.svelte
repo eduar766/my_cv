@@ -12,14 +12,14 @@
     };
 </script>
 
-<div class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
-	<div class="mb-6 text-2xl font-bold">
+<section id="podcasts" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+	<h2 class="mb-6 text-2xl font-bold">
 		<div class="flex items-baseline justify-between">
 			<div>
 				Listen to my <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">podcast</span>
 			</div>
 		</div>
-	</div>
+	</h2>
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         {#each podcasts as pod }
             <div class="overflow-hidden rounded-md bg-slate-800 hover:translate-y-1 transition-transform">
@@ -32,7 +32,7 @@
                     />
                 </div>
                 <div class="px-3 pt-4 pb-6 text-center">
-                    <h2 class="text-xl font-semibold">{pod.title}</h2>
+                    <h3 class="text-xl font-semibold">{pod.title}</h3>
                     <div class="mt-2 text-sm">
                         {pod.description}
                     </div>
@@ -57,4 +57,4 @@
             
         {/each}
 	</div>
-</div>
+</section>

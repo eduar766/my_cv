@@ -11,19 +11,19 @@
     }
 </script>
 
-<div class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
-	<div class="mb-6 text-2xl font-bold">
+<section id="experience" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+	<h2 class="mb-6 text-2xl font-bold">
 		My <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"> Experience </span>
-	</div>
+	</h2>
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         {#each jobs as job}
-            <div class="items-center gap-x-8 rounded-md bg-slate-800 p-3">
+            <article class="items-center gap-x-8 rounded-md bg-slate-800 p-3" aria-label={`${job.company} - ${job.jobTitle}`}>
                 <div>
                     <div class="flex flex-col gap-y-2">
                         <div class="flex items-center justify-between">
                             <a class="hover:text-cyan-400" href="/">
-                                <div class="text-xl font-semibold">{job.company}</div>
+                                <h3 class="text-xl font-semibold">{job.company}</h3>
                             </a>
                             {#if job.endDate === "Presente"}
                                 <span class="rounded-full bg-green-500 px-2 py-0.5 text-xs font-bold text-white">Present</span>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         {/each}
     </div>
-</div>
+</section>

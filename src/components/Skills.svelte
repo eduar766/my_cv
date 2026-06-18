@@ -9,10 +9,10 @@
     }
 </script>
 
-<div class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
-    <div class="mb-6 text-2xl font-bold">
+<section id="skills" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+    <h2 class="mb-6 text-2xl font-bold">
         My <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"> Skills </span>
-    </div>
+    </h2>
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         {#each skills as skill}
@@ -31,4 +31,4 @@
             </div>
         {/each}
     </div>
-</div>
+</section>
