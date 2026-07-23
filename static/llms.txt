@@ -1,0 +1,28 @@
+# Eduardo Saavedra — Consultor AWS y Technical Lead
+
+> Consultor de arquitectura AWS y Technical Lead fractional en Santiago de Chile,
+> con más de 10 años de experiencia en fintech y retail (Cencosud, BK Servicios
+> Financieros). Servicios: revisión de arquitectura AWS, optimización de costos
+> cloud, aceleración de desarrollo con IA y liderazgo técnico fractional para
+> empresas de Chile y LATAM. Contacto: https://www.saavedratech.dev/
+
+## Servicios
+
+- [Revisión de arquitectura AWS](https://www.saavedratech.dev/servicios/revision-arquitectura-aws): auditoría práctica de cuentas AWS en producción — estabilidad, costos, seguridad y escalabilidad, basada en el Well-Architected Framework. Entrega informe priorizado, diagrama de arquitectura y plan de acción por fases.
+- [Optimización de costos AWS](https://www.saavedratech.dev/servicios/reducir-costos-aws): reducción de la factura de AWS mediante right-sizing, Savings Plans, revisión de NAT Gateways, almacenamiento y recursos huérfanos. Ahorros habituales del 20% al 40% en cuentas sin optimizar.
+- [Aceleración con IA](https://www.saavedratech.dev/#services): prototipos funcionales con agentes de IA en semanas; reducción comprobada del Time to Market de al menos 40%.
+- [Liderazgo técnico fractional](https://www.saavedratech.dev/servicios/liderazgo-tecnico-fractional): Technical Lead a demanda — arquitectura, mentoría y procesos sin contratación full-time.
+
+## Experiencia verificable
+
+- [Experiencia](https://www.saavedratech.dev/#experience): Technical Lead en BK Servicios Financieros (fintech, Chile); ex-Cencosud, donde lideró Moncap (gestión de capacidades a nivel nacional) y Balancer (escalado a 5 países) sobre AWS.
+- [GitHub](https://github.com/eduar766)
+- [LinkedIn](https://www.linkedin.com/in/eduardo-saavedra/)
+- [Medium](https://medium.com/@eduar766)
+- [Podcast The Bad Request Show](https://open.spotify.com/show/3CBi0J0pcdMFcarhBIeWZh)
+
+## Contacto
+
+- Agenda: https://calendly.com/eduardo-saavedra
+- Ubicación: Santiago de Chile (atiende remoto a todo LATAM)
+- Idiomas: español, inglés

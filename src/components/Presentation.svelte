@@ -13,7 +13,7 @@
 		<div>
 			<p class="text-lg font-medium text-gray-400">Hola, soy 👋</p>
 			<h1 class="mt-1 text-4xl font-bold md:text-5xl">
-                Eduardo <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Saavedra</span>
+                Eduardo <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Saavedra</span><span class="sr-only"> — Consultor AWS y Technical Lead en Santiago de Chile</span>
 			</h1>
 			<p class="mt-2 text-lg font-semibold text-sky-400">
                 Technical Lead &amp; Consultor AWS

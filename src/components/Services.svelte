@@ -5,6 +5,7 @@
     const services = [
         {
             title: 'Revisión de arquitectura AWS',
+            href: '/servicios/revision-arquitectura-aws',
             icon: 'mdi:aws',
             description:
                 'Auditoría práctica de tu cuenta AWS enfocada en estabilidad, costo y seguridad. No es un checklist genérico: revisamos lo que realmente corre en producción.',
@@ -41,6 +42,7 @@
         },
         {
             title: 'Liderazgo técnico fractional',
+            href: '/servicios/liderazgo-tecnico-fractional',
             icon: 'mdi:account-tie',
             description:
                 'Technical Lead a demanda para equipos que necesitan dirección técnica sin contratar a tiempo completo.',
@@ -116,12 +118,24 @@
                     </ul>
                 </div>
 
-                <CalendlyButton
-                    label="Agendar una llamada"
-                    variant="primary"
-                    class="mt-auto w-full"
-                />
+                <div class="mt-auto flex flex-col gap-2">
+                    {#if service.href}
+                        <a href={service.href} class="text-center text-sm font-semibold text-sky-400 hover:text-sky-300">
+                            Ver detalle del servicio →
+                        </a>
+                    {/if}
+                    <CalendlyButton
+                        label="Agendar una llamada"
+                        variant="primary"
+                        class="w-full"
+                    />
+                </div>
             </article>
         {/each}
     </div>
+
+    <p class="mt-4 text-sm text-gray-400">
+        ¿Solo te preocupa la factura? Mira cómo trabajo la
+        <a href="/servicios/reducir-costos-aws" class="font-semibold text-sky-400 hover:text-sky-300">optimización de costos AWS →</a>
+    </p>
 </section>

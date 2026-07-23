@@ -1,5 +1,6 @@
 <script>
     import CalendlyButton from './CalendlyButton.svelte';
+    import Logo from './Logo.svelte';
 
     export let socials;
     let scrolled = false;
@@ -13,10 +14,12 @@
 
 <header class="sticky top-0 z-50 mx-auto w-full bg-slate-900/80 backdrop-blur-md px-3 py-3 md:py-4 transition-all {scrolled ? 'shadow-lg shadow-black/20' : ''}">
 	<div class="mx-auto flex max-w-screen-lg flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between">
-		<a href="/" aria-label="Home">
-            <div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
-				Eduardo Saavedra
-			</div>
+		<a href="/" aria-label="Inicio" class="flex items-center gap-2 text-gray-100">
+            <Logo class="h-9 w-9" />
+            <div class="flex flex-col leading-tight">
+                <span class="text-lg font-bold tracking-wide">Saavedra<span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Tech</span></span>
+                <span class="text-[0.6rem] font-medium uppercase tracking-[0.2em] text-gray-400">Digital Engineering</span>
+            </div>
         </a>
 		<div class="flex flex-wrap items-center gap-x-4 gap-y-2">
 			<nav>
