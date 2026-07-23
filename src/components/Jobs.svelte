@@ -12,9 +12,31 @@
 </script>
 
 <section id="experience" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
-	<h2 class="mb-6 text-2xl font-bold">
+	<h2 class="mb-2 text-2xl font-bold">
 		My <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"> Experience </span>
 	</h2>
+    <p class="mb-6 text-gray-400">
+        Resultados concretos que respaldan la oferta de consultoría.
+    </p>
+
+    <div class="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2">
+        <div class="rounded-md bg-slate-800 p-4">
+            <h3 class="font-semibold text-sky-400">Cencosud</h3>
+            <p class="text-sm text-gray-300">Lideré Moncap, sistema de gestión de capacidades a nivel nacional para supermercados.</p>
+        </div>
+        <div class="rounded-md bg-slate-800 p-4">
+            <h3 class="font-semibold text-sky-400">Cencosud</h3>
+            <p class="text-sm text-gray-300">Lideré el lanzamiento de Balancer, solución de optimización de ventanas horarias escalada a 5 países.</p>
+        </div>
+        <div class="rounded-md bg-slate-800 p-4">
+            <h3 class="font-semibold text-sky-400">BK Servicios Financieros</h3>
+            <p class="text-sm text-gray-300">Reduje el Time to Market al menos un 40% usando IA para prototipado de herramientas core.</p>
+        </div>
+        <div class="rounded-md bg-slate-800 p-4">
+            <h3 class="font-semibold text-sky-400">BK Servicios Financieros</h3>
+            <p class="text-sm text-gray-300">Dirigí la integración de sistemas legado con Salesforce para Crediautos.</p>
+        </div>
+    </div>
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         {#each jobs as job}

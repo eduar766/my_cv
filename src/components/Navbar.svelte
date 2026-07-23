@@ -17,19 +17,24 @@
 			</div>
         </a>
 		<nav>
-			<ul class="flex gap-x-3 font-medium text-gray-200">
+			<ul class="flex flex-wrap gap-x-3 gap-y-1 font-medium text-gray-200">
+                <li class="hover:text-white">
+                    <a href="#services">Servicios</a>
+                </li>
+                <li class="hover:text-white">
+                    <a href="#experience">Experiencia</a>
+                </li>
+                <li class="hover:text-white">
+                    <a href="#podcasts">Podcast</a>
+                </li>
                 {#each socials as social }
-                    {#if social.id === 5}
-                        <li class="hover:text-white">
-                            <a href={`${social.url}`}>Instagram</a>
-                        </li>
-                    {:else if social.id === 2}
+                    {#if social.id === 2}
                         <li class="hover:text-white">
                             <a href={`${social.url}`}>GitHub</a>
                         </li>
                     {:else if social.id === 3}
                         <li class="hover:text-white">
-                            <a href={`${social.url}`}>Twitter</a>
+                            <a href={`${social.url}`}>Medium</a>
                         </li>
                     {/if}
                 {/each}

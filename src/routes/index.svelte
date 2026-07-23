@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import Navbar from '../components/Navbar.svelte';
     import Presentation from '../components/Presentation.svelte';
+    import Services from '../components/Services.svelte';
     import Jobs from '../components/Jobs.svelte';
     import Skills from '../components/Skills.svelte';
     import Footer from '../components/Footer.svelte';
@@ -50,13 +51,18 @@
 </script>
 
 <svelte:head>
-	<title>Eduardo Saavedra - Technical Lead Senior & Software Engineer</title>
-	<meta name="description" content="Eduardo Saavedra, Technical Lead Senior especializado en microservicios, AWS e IA. Más de 10 años liderando transformación digital en retail y fintech." />
+	<title>Eduardo Saavedra - Consultoría AWS | Escalabilidad sin costos descontrolados</title>
+	<meta name="description" content="Consultoría AWS práctica para empresas que necesitan escalar infraestructura, reducir costos y acelerar entregas. Revisión de arquitectura, aceleración con IA y liderazgo técnico fractional." />
 </svelte:head>
 
 <main>
     <Navbar socials={data.socials}/>
-    <Presentation about={data.about} socials={data.socials} profession={data.profession}/>
+    <Presentation
+        about={data.about}
+        socials={data.socials}
+        headline="Ayudo a empresas a escalar su infraestructura AWS sin que truene ni se dispare el costo."
+    />
+    <Services />
     <Jobs jobs={data.jobs} techs={data.techs} />
     <Skills skills={data.skills} techs={data.techs} />
     <Podcast podcasts={data.podcasts} techs={data.techs}/>
