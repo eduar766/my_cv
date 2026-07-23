@@ -59,9 +59,9 @@
     ];
 </script>
 
-<section id="services" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+<section id="services" class="mx-auto max-w-screen-lg px-3 py-12 md:py-16 animate-fade-in">
     <h2 class="mb-2 text-2xl font-bold">
-        Servicios <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">AWS</span>
+        Mis <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Servicios</span>
     </h2>
     <p class="mb-6 text-gray-400">
         Consultoría práctica para escalar infraestructura, reducir costos y acelerar entregas.
@@ -71,7 +71,7 @@
         {#each services as service}
             <article
                 class="relative flex flex-col rounded-md bg-slate-800 p-5 {service.highlight
-                    ? 'border-2 border-sky-500 md:col-span-2'
+                    ? 'border-2 border-sky-500'
                     : ''}"
                 aria-label={service.title}
             >
@@ -93,7 +93,7 @@
                 <p class="mb-4 text-sm text-gray-300">{service.description}</p>
 
                 <div class="mb-4 flex-1">
-                    <h4 class="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">Alcance</h4>
+                    <h4 class="mb-2 text-xs font-bold uppercase tracking-wide text-gray-400">Alcance</h4>
                     <ul class="space-y-1.5">
                         {#each service.scope as item}
                             <li class="flex items-start gap-2 text-sm text-gray-300">
@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="mb-5">
-                    <h4 class="mb-2 text-xs font-bold uppercase tracking-wide text-gray-500">Qué recibes</h4>
+                    <h4 class="mb-2 text-xs font-bold uppercase tracking-wide text-gray-400">Qué recibes</h4>
                     <ul class="space-y-1.5">
                         {#each service.deliverables as item}
                             <li class="flex items-start gap-2 text-sm text-gray-300">

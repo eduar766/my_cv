@@ -9,9 +9,9 @@
     }
 </script>
 
-<section id="skills" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+<section id="skills" class="mx-auto max-w-screen-lg px-3 py-12 md:py-16 animate-fade-in">
     <h2 class="mb-6 text-2xl font-bold">
-        My <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"> Skills </span>
+        Mis <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"> Habilidades </span>
     </h2>
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">

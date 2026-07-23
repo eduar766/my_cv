@@ -12,25 +12,23 @@
     };
 </script>
 
-<section id="podcasts" class="mx-auto max-w-screen-lg px-3 py-6 animate-fade-in">
+<section id="podcasts" class="mx-auto max-w-screen-lg px-3 py-12 md:py-16 animate-fade-in">
 	<h2 class="mb-6 text-2xl font-bold">
 		<div class="flex items-baseline justify-between">
 			<div>
-				Listen to my <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">podcast</span>
+				Escucha mis <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">podcasts</span>
 			</div>
 		</div>
 	</h2>
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         {#each podcasts as pod }
-            <div class="overflow-hidden rounded-md bg-slate-800 hover:translate-y-1 transition-transform">
-                <div class="aspect-w-3 aspect-h-2">
-                    <img
-                        class="object-cover object-center h-15 w-15"
-                        src={images[pod.logo]}
-                        loading="lazy"
-                        alt={pod.title}
-                    />
-                </div>
+            <div class="overflow-hidden rounded-md bg-slate-800 hover:-translate-y-1 transition-transform">
+                <img
+                    class="aspect-video w-full object-cover object-center"
+                    src={images[pod.logo]}
+                    loading="lazy"
+                    alt={pod.title}
+                />
                 <div class="px-3 pt-4 pb-6 text-center">
                     <h3 class="text-xl font-semibold">{pod.title}</h3>
                     <div class="mt-2 text-sm">
@@ -43,8 +41,8 @@
                         {#each pod.platform as podi }
                             {#each techs as t}
                                 {#if t.name === podi.title}
-                                <a href={podi.url}>
-                                    <Icon icon={t.icon} class="h-10 w-10 hover:translate-y-1 m-3" loading="lazy"/>
+                                <a href={podi.url} target="_blank" rel="noopener" aria-label={`${pod.title} en ${podi.title}`}>
+                                    <Icon icon={t.icon} class="h-10 w-10 transition-transform hover:-translate-y-1 m-3" loading="lazy"/>
                                 </a>
                                 {/if}        
                             {/each}

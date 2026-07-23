@@ -1,5 +1,4 @@
 <script>
-    import { onMount } from 'svelte';
     import Navbar from '../components/Navbar.svelte';
     import Presentation from '../components/Presentation.svelte';
     import Services from '../components/Services.svelte';
@@ -7,6 +6,7 @@
     import Skills from '../components/Skills.svelte';
     import Footer from '../components/Footer.svelte';
     import Podcast from '../components/Podcast.svelte';
+    import ContactCta from '../components/ContactCta.svelte';
 
     import data from'../eduardo.json';
 
@@ -42,17 +42,13 @@
         }
     };
 
-    onMount(() => {
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(structuredData);
-        document.head.appendChild(script);
-    });
+    const jsonLd = `<script type="application/ld+json">${JSON.stringify(structuredData)}${'<'}/script>`;
 </script>
 
 <svelte:head>
-	<title>Eduardo Saavedra - Consultoría AWS | Escalabilidad sin costos descontrolados</title>
-	<meta name="description" content="Consultoría AWS práctica para empresas que necesitan escalar infraestructura, reducir costos y acelerar entregas. Revisión de arquitectura, aceleración con IA y liderazgo técnico fractional." />
+	<title>Eduardo Saavedra - Technical Lead & Consultor AWS</title>
+	<meta name="description" content="Technical Lead con más de 10 años de experiencia en retail y fintech. Consultoría práctica: revisión de arquitectura AWS, aceleración con IA y liderazgo técnico fractional." />
+	{@html jsonLd}
 </svelte:head>
 
 <main>
@@ -60,11 +56,12 @@
     <Presentation
         about={data.about}
         socials={data.socials}
-        headline="Ayudo a empresas a escalar su infraestructura AWS sin que truene ni se dispare el costo."
+        headline="Ayudo a empresas a escalar su infraestructura AWS sin caídas ni sorpresas en la factura."
     />
     <Services />
     <Jobs jobs={data.jobs} techs={data.techs} />
     <Skills skills={data.skills} techs={data.techs} />
     <Podcast podcasts={data.podcasts} techs={data.techs}/>
+    <ContactCta />
     <Footer socials={data.socials}/>
 </main>

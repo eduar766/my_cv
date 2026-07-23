@@ -4,8 +4,11 @@
     export let url = 'https://calendly.com/eduardo-saavedra';
     export let label = 'Agendar una llamada';
     export let variant = 'primary';
+    export let compact = false;
     let className = '';
     export { className as class };
+
+    $: sizeClasses = compact ? 'px-4 py-2 text-sm' : 'px-6 py-3';
 
     let open = false;
 
@@ -38,14 +41,14 @@
 {#if variant === 'primary'}
     <button
         on:click={openModal}
-        class="inline-block rounded-md bg-gradient-to-br from-sky-500 to-cyan-400 px-6 py-3 font-semibold text-white transition-all hover:translate-y-0.5 hover:shadow-lg {className}"
+        class="inline-block rounded-md bg-gradient-to-br from-sky-500 to-cyan-400 {sizeClasses} font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 {className}"
     >
         {label}
     </button>
 {:else}
     <button
         on:click={openModal}
-        class="inline-block rounded-md border border-sky-500 px-6 py-3 font-semibold text-sky-400 transition-all hover:bg-sky-500/10 hover:translate-y-0.5 {className}"
+        class="inline-block rounded-md border border-sky-500 {sizeClasses} font-semibold text-sky-400 transition-all hover:bg-sky-500/10 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 {className}"
     >
         {label}
     </button>
