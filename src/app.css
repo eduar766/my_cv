@@ -186,8 +186,8 @@ main[id] {
 }
 .hero {
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	grid-template-areas: 'portrait copy';
+	grid-template-columns: 1.5fr 1fr;
+	grid-template-areas: 'copy portrait';
 	align-items: center;
 	gap: 64px;
 	padding-top: 88px;
