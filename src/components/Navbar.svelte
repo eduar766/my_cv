@@ -1,52 +1,37 @@
 <script>
-    import CalendlyButton from './CalendlyButton.svelte';
-    import Logo from './Logo.svelte';
-
-    export let socials;
-    let scrolled = false;
-
-    function handleScroll() {
-        scrolled = window.scrollY > 60;
-    }
+	import Logo from './Logo.svelte';
+	let menuOpen = false;
+	const links = [
+		['/#projects', 'Proyectos'],
+		['/#experience', 'Experiencia'],
+		['/#services', 'Servicios'],
+		['/#podcasts', 'Podcasts']
+	];
 </script>
 
-<svelte:window on:scroll={handleScroll}/>
-
-<header class="sticky top-0 z-50 mx-auto w-full bg-slate-900/80 backdrop-blur-md px-3 py-3 md:py-4 transition-all {scrolled ? 'shadow-lg shadow-black/20' : ''}">
-	<div class="mx-auto flex max-w-screen-lg flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between">
-		<a href="/" aria-label="Inicio" class="flex items-center gap-2 text-gray-100">
-            <Logo class="h-9 w-9" />
-            <div class="flex flex-col leading-tight">
-                <span class="text-lg font-bold tracking-wide">Saavedra<span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Tech</span></span>
-                <span class="text-[0.6rem] font-medium uppercase tracking-[0.2em] text-gray-400">Digital Engineering</span>
-            </div>
-        </a>
-		<div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-			<nav>
-				<ul class="flex flex-wrap items-center gap-x-3 gap-y-1 font-medium text-gray-200">
-	                <li class="hover:text-white">
-	                    <a href="#services">Servicios</a>
-	                </li>
-	                <li class="hover:text-white">
-	                    <a href="#experience">Experiencia</a>
-	                </li>
-	                <li class="hover:text-white">
-	                    <a href="#podcasts">Podcast</a>
-	                </li>
-	                {#each socials as social }
-	                    {#if social.id === 2}
-	                        <li class="hover:text-white">
-	                            <a href={`${social.url}`} target="_blank" rel="noopener">GitHub</a>
-	                        </li>
-	                    {:else if social.id === 3}
-	                        <li class="hover:text-white">
-	                            <a href={`${social.url}`} target="_blank" rel="noopener">Medium</a>
-	                        </li>
-	                    {/if}
-	                {/each}
-				</ul>
-			</nav>
-			<CalendlyButton label="Agendar llamada" variant="primary" compact />
-		</div>
+<a href="#main-content" class="skip-link">Saltar al contenido</a>
+<header class="site-header">
+	<div class="nav-inner">
+		<a href="/" aria-label="SaavedraTech — Inicio" class="brand">
+			<Logo class="h-9 w-9" />
+			<span
+				>Saavedra<span class="text-sky-400">Tech</span><small>El espacio de Eduardo Saavedra</small
+				></span
+			>
+		</a>
+		<button
+			class="menu-toggle"
+			aria-expanded={menuOpen}
+			aria-controls="main-navigation"
+			on:click={() => (menuOpen = !menuOpen)}>{menuOpen ? 'Cerrar ✕' : 'Menú ☰'}</button
+		>
+		<nav id="main-navigation" class:menu-open={menuOpen} aria-label="Navegación principal">
+			{#each links as [href, label]}
+				<a {href} on:click={() => (menuOpen = false)}>{label}</a>
+			{/each}
+			<a href="/#contact" class="nav-contact" on:click={() => (menuOpen = false)}
+				>Contacto <span aria-hidden="true">↗</span></a
+			>
+		</nav>
 	</div>
 </header>
