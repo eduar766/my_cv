@@ -1,6 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import photo from '$lib/assets/avatar.svg';
+	import photo from '$lib/assets/eduardo-portrait.webp';
 	export let socials;
 </script>
 
@@ -30,11 +30,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="hero-portrait">
-		<span class="portrait-caption">Detrás de cada producto,<br />una persona que construye.</span>
-		<img src={photo} alt="Avatar de Eduardo Saavedra" width="256" height="320" />
-		<span class="portrait-note"><span aria-hidden="true">↳</span> De la idea a producción.</span>
-	</div>
+	<figure class="hero-portrait">
+		<img
+			src={photo}
+			alt="Retrato ilustrado de Eduardo Saavedra con gafas y jersey oscuro"
+			width="1254"
+			height="1254"
+			fetchpriority="high"
+		/>
+	</figure>
 </section>
 <div class="credibility-strip">
 	<div><strong>10+ años</strong><span>construyendo software</span></div>

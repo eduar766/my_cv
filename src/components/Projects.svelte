@@ -76,29 +76,4 @@
 			</article>
 		{/each}
 	</div>
-	<aside class="case-feature" aria-labelledby="case-feature-title">
-		<a
-			class="case-feature-visual"
-			href="/proyectos/lazy-crm"
-			aria-label="Ver el caso de estudio de Lazy CRM"
-			><img
-				src="/projects/lazy-crm-preview.png"
-				alt="Vista de la página pública de Lazy CRM en español"
-				width="1440"
-				height="1200"
-				loading="lazy"
-			/></a
-		>
-		<div class="case-feature-copy">
-			<p class="eyebrow">Dentro de un producto propio</p>
-			<h3 id="case-feature-title">Construir es también<br />saber qué decidir.</h3>
-			<p>
-				De una necesidad como freelancer a Lazy CRM: el problema, las decisiones de arquitectura y
-				los compromisos de construir un producto.
-			</p>
-			<a class="text-link" href="/proyectos/lazy-crm"
-				>Cómo construí Lazy CRM <span aria-hidden="true">→</span></a
-			>
-		</div>
-	</aside>
 </section>
