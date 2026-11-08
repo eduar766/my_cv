@@ -18,7 +18,8 @@
 			description:
 				'Un CRM minimalista para freelancers y pequeños negocios. Clientes, oportunidades comerciales y facturas, en un solo lugar.',
 			detail: 'Menos administración. Más tiempo para tu trabajo.',
-			theme: 'crm'
+			theme: 'crm',
+			caseStudy: '/proyectos/lazy-crm'
 		},
 		{
 			name: 'Komorebi',
@@ -60,6 +61,9 @@
 					<h3>{project.name}</h3>
 					<p>{project.description}</p>
 					<p class="project-detail">{project.detail}</p>
+					{#if project.caseStudy}<a class="project-case-link" href={project.caseStudy}
+							>Cómo construí Lazy CRM <span aria-hidden="true">→</span></a
+						>{/if}
 					<a
 						class="text-link"
 						href={project.url}
@@ -72,4 +76,29 @@
 			</article>
 		{/each}
 	</div>
+	<aside class="case-feature" aria-labelledby="case-feature-title">
+		<a
+			class="case-feature-visual"
+			href="/proyectos/lazy-crm"
+			aria-label="Ver el caso de estudio de Lazy CRM"
+			><img
+				src="/projects/lazy-crm-preview.png"
+				alt="Vista de la página pública de Lazy CRM en español"
+				width="1440"
+				height="1200"
+				loading="lazy"
+			/></a
+		>
+		<div class="case-feature-copy">
+			<p class="eyebrow">Dentro de un producto propio</p>
+			<h3 id="case-feature-title">Construir es también<br />saber qué decidir.</h3>
+			<p>
+				De una necesidad como freelancer a Lazy CRM: el problema, las decisiones de arquitectura y
+				los compromisos de construir un producto.
+			</p>
+			<a class="text-link" href="/proyectos/lazy-crm"
+				>Cómo construí Lazy CRM <span aria-hidden="true">→</span></a
+			>
+		</div>
+	</aside>
 </section>

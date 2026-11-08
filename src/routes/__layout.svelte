@@ -1,11 +1,42 @@
 <script>
 	import '../app.css';
+	import { page } from '$app/stores';
+	$: isLazyCase = $page.url.pathname.replace(/\/$/, '') === '/proyectos/lazy-crm';
+	$: shareTitle = isLazyCase
+		? 'Cómo construí Lazy CRM — Eduardo Saavedra'
+		: 'Eduardo Saavedra — Ingeniero y creador de productos';
+	$: shareDescription = isLazyCase
+		? 'Producto, arquitectura y decisiones detrás de un CRM para freelancers.'
+		: 'Ingeniero, Technical Lead y creador de Futbocracy, Lazy CRM y Komorebi. Proyectos, trayectoria, podcasts y servicios.';
+	$: shareImage =
+		'https://www.saavedratech.dev/' +
+		(isLazyCase ? 'projects/lazy-crm-preview.png' : 'og-image.png');
 	let showBackToTop = false;
 
 	function handleScroll() {
 		showBackToTop = window.scrollY > 400;
 	}
 </script>
+
+<svelte:head>
+	<meta property="og:title" content={shareTitle} />
+	<meta property="og:description" content={shareDescription} />
+	<meta property="og:type" content={isLazyCase ? 'article' : 'profile'} />
+	<meta
+		property="og:url"
+		content={'https://www.saavedratech.dev' + (isLazyCase ? '/proyectos/lazy-crm' : '/')}
+	/>
+	<meta property="og:image" content={shareImage} />
+	<meta property="og:image:width" content={isLazyCase ? '1440' : '1200'} />
+	<meta property="og:image:height" content={isLazyCase ? '1200' : '630'} />
+	<meta name="twitter:title" content={shareTitle} />
+	<meta name="twitter:description" content={shareDescription} />
+	<meta name="twitter:image" content={shareImage} />
+	{#if !isLazyCase}<meta property="profile:first_name" content="Eduardo" /><meta
+			property="profile:last_name"
+			content="Saavedra"
+		/>{/if}
+</svelte:head>
 
 <svelte:window on:scroll={handleScroll} />
 
