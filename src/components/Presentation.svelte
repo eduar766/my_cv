@@ -17,7 +17,14 @@
 			<a class="button-primary" href="#projects"
 				>Explorar mis proyectos <span aria-hidden="true">↗</span></a
 			>
-			<a class="text-link" href="#contact">Conversemos <span aria-hidden="true">→</span></a>
+			<a
+				class="text-link"
+				href="/cv/eduardo-saavedra-cv-2026.pdf"
+				download="Eduardo-Saavedra-CV-2026.pdf"
+				>Descargar CV <span class="text-xs font-normal text-slate-400">PDF</span><span
+					aria-hidden="true">↓</span
+				></a
+			>
 		</div>
 		<div class="hero-socials">
 			<span>Santiago, Chile · Trabajo remoto</span>
