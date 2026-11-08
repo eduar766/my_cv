@@ -1,58 +1,64 @@
 <script>
-    export let podcasts;
-    export let techs;
-    import Icon from '@iconify/svelte';
+	export let podcasts;
+	export let techs;
+	import Icon from '@iconify/svelte';
 
-    import badrequestphoto from '$lib/assets/badrequest2.png';
-    import visitarobotica from '$lib/assets/visita.png';
+	import badrequestphoto from '$lib/assets/badrequest2.png';
+	import visitarobotica from '$lib/assets/visita.png';
 
-    const images = {
-        'badrequest2.png': badrequestphoto,
-        'visita.png': visitarobotica
-    };
+	const images = {
+		'badrequest2.png': badrequestphoto,
+		'visita.png': visitarobotica
+	};
 </script>
 
-<section id="podcasts" class="mx-auto max-w-screen-lg px-3 py-12 md:py-16 animate-fade-in">
-	<h2 class="mb-6 text-2xl font-bold">
-		<div class="flex items-baseline justify-between">
-			<div>
-				Escucha mis <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">podcasts</span>
-			</div>
+<section id="podcasts" class="page-section">
+	<div class="section-heading">
+		<div>
+			<p class="eyebrow">Fuera del editor de código</p>
+			<h2>También detrás del micrófono<span class="text-sky-400">.</span></h2>
 		</div>
-	</h2>
+		<p>Conversaciones sobre programación, tecnología y todo lo que despierta mi curiosidad.</p>
+	</div>
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-        {#each podcasts as pod }
-            <div class="overflow-hidden rounded-md bg-slate-800 hover:-translate-y-1 transition-transform">
-                <img
-                    class="aspect-video w-full object-cover object-center"
-                    src={images[pod.logo]}
-                    loading="lazy"
-                    alt={pod.title}
-                />
-                <div class="px-3 pt-4 pb-6 text-center">
-                    <h3 class="text-xl font-semibold">{pod.title}</h3>
-                    <div class="mt-2 text-sm">
-                        {pod.description}
-                    </div>
-                </div>
+		{#each podcasts as pod}
+			<div class="podcast-card">
+				<img
+					class="aspect-video w-full object-cover object-center"
+					src={images[pod.logo]}
+					loading="lazy"
+					alt={pod.title}
+				/>
+				<div class="px-6 pt-5 pb-2">
+					<h3 class="text-xl font-semibold">{pod.title}</h3>
+					<div class="mt-2 text-sm">
+						{pod.description}
+					</div>
+				</div>
 
-                <div class="flex flex-col items-center gap-y-2 my-5">
-                    <div class="grid grid-cols-3 items-center md:grid-cols-3 ">
-                        {#each pod.platform as podi }
-                            {#each techs as t}
-                                {#if t.name === podi.title}
-                                <a href={podi.url} target="_blank" rel="noopener" aria-label={`${pod.title} en ${podi.title}`}>
-                                    <Icon icon={t.icon} class="h-10 w-10 transition-transform hover:-translate-y-1 m-3" loading="lazy"/>
-                                </a>
-                                {/if}        
-                            {/each}
-                        {/each}
-                    </div>
-
-                </div>
-
-            </div>
-            
-        {/each}
+				<div class="flex flex-col items-start px-3 pb-4">
+					<div class="grid grid-cols-3 items-center md:grid-cols-3">
+						{#each pod.platform as podi}
+							{#each techs as t}
+								{#if t.name === podi.title}
+									<a
+										href={podi.url}
+										target="_blank"
+										rel="noopener"
+										aria-label={`${pod.title} en ${podi.title}`}
+									>
+										<Icon
+											icon={t.icon}
+											class="h-10 w-10 transition-transform hover:-translate-y-1 m-3"
+											loading="lazy"
+										/>
+									</a>
+								{/if}
+							{/each}
+						{/each}
+					</div>
+				</div>
+			</div>
+		{/each}
 	</div>
 </section>

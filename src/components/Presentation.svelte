@@ -1,45 +1,43 @@
 <script>
-    import Icon from '@iconify/svelte';
-    import CalendlyButton from './CalendlyButton.svelte';
-
-    export let about;
-    export let socials;
-    export let headline;
+	import Icon from '@iconify/svelte';
 	import photo from '$lib/assets/avatar.svg';
+	export let socials;
 </script>
 
-<section id="about" class="mx-auto max-w-screen-lg px-3 py-12 md:py-16 animate-fade-in">
-	<div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
-		<div>
-			<p class="text-lg font-medium text-gray-400">Hola, soy 👋</p>
-			<h1 class="mt-1 text-4xl font-bold md:text-5xl">
-                Eduardo <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Saavedra</span><span class="sr-only"> — Consultor AWS y Technical Lead en Santiago de Chile</span>
-			</h1>
-			<p class="mt-2 text-lg font-semibold text-sky-400">
-                Technical Lead &amp; Consultor AWS
-            </p>
-			<p class="mt-4 text-xl font-medium text-gray-100">
-                {headline}
-            </p>
-			<p class="mt-4 text-lg leading-8 text-gray-300">
-                {about}
-			</p>
-			<div class="mt-3 flex gap-1">
-                {#each socials as social }
-                    <a href={`${social.url}`} aria-label={social.title} target="_blank" rel="noopener">
-                        <Icon icon={social.icon} class="h-12 w-12 transition-transform hover:-translate-y-1" loading="lazy"/>
-                    </a>
-                {/each}
-			</div>
-            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                <CalendlyButton label="Agendar una llamada" variant="primary" />
-                <a href="#experience" class="inline-block rounded-md border border-sky-500 px-6 py-3 font-semibold text-sky-400 transition-all hover:bg-sky-500/10 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
-                    Ver mi experiencia
-                </a>
-            </div>
+<section id="about" class="page-section hero">
+	<div class="hero-copy">
+		<p class="eyebrow">Ingeniería · Productos · Personas</p>
+		<h1>Hola, soy<br />Eduardo <span class="text-sky-400">Saavedra.</span></h1>
+		<p class="hero-role">Technical Lead, ingeniero y creador de productos.</p>
+		<p class="hero-description">
+			Construyo software, diseño sistemas en AWS y acompaño a equipos a convertir ideas en
+			productos. Más de 10 años entre tecnología, retail y servicios financieros.
+		</p>
+		<div class="hero-actions">
+			<a class="button-primary" href="#projects"
+				>Explorar mis proyectos <span aria-hidden="true">↗</span></a
+			>
+			<a class="text-link" href="#contact">Conversemos <span aria-hidden="true">→</span></a>
 		</div>
-		<div class="shrink-0">
-			<img class="h-80 w-64" src={photo} alt="Eduardo Saavedra avatar" loading="lazy" />
+		<div class="hero-socials">
+			<span>Santiago, Chile · Trabajo remoto</span>
+			<div class="flex gap-4">
+				{#each socials.slice(0, 3) as social}
+					<a href={social.url} aria-label={social.title} target="_blank" rel="noopener noreferrer"
+						><Icon icon={social.icon} class="h-5 w-5" /></a
+					>
+				{/each}
+			</div>
 		</div>
 	</div>
+	<div class="hero-portrait">
+		<span class="portrait-caption">Detrás de cada producto,<br />una persona que construye.</span>
+		<img src={photo} alt="Avatar de Eduardo Saavedra" width="256" height="320" />
+		<span class="portrait-note"><span aria-hidden="true">↳</span> De la idea a producción.</span>
+	</div>
 </section>
+<div class="credibility-strip">
+	<div><strong>10+ años</strong><span>construyendo software</span></div>
+	<div><strong>3 productos propios</strong><span>de la idea al desarrollo</span></div>
+	<div><strong>Retail & fintech</strong><span>experiencia en sistemas reales</span></div>
+</div>

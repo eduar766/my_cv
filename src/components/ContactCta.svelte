@@ -1,17 +1,22 @@
 <script>
-    import CalendlyButton from './CalendlyButton.svelte';
+	import CalendlyButton from './CalendlyButton.svelte';
 </script>
 
-<section id="contact" class="mx-auto max-w-screen-lg px-3 py-12 md:py-16 animate-fade-in">
-    <div class="rounded-lg bg-slate-800 px-6 py-10 text-center md:px-12">
-        <h2 class="text-2xl font-bold">
-            ¿Necesitas ayuda con tu <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">infraestructura</span>?
-        </h2>
-        <p class="mx-auto mt-3 max-w-xl text-gray-300">
-            Conversemos 30 minutos sin compromiso sobre tu arquitectura, tus costos en AWS o cómo acelerar a tu equipo con IA.
-        </p>
-        <div class="mt-6 flex justify-center">
-            <CalendlyButton label="Agendar una llamada" variant="primary" />
-        </div>
-    </div>
+<section id="contact" class="page-section">
+	<div class="contact-panel">
+		<div>
+			<p class="eyebrow">Siempre hay algo por construir</p>
+			<h2>¿Conversamos?</h2>
+			<p>
+				Una idea, un proyecto o un desafío técnico. Cuéntame en qué estás trabajando y veamos cómo
+				conectar.
+			</p>
+		</div>
+		<div class="contact-actions">
+			<CalendlyButton label="Agendar una conversación" /><a
+				class="text-link"
+				href="mailto:eduar766@gmail.com">eduar766@gmail.com ↗</a
+			>
+		</div>
+	</div>
 </section>
